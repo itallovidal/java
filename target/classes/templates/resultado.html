@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Baralho</title>
+</head>
+<body>
+    <h1>Resultado</h1>
+    <h2>Quantas cartas faltam para o baralho "<span th:text="${baralho.getCartas_entrada()}"></span>" estar completo?</h2>
+
+    <ul>
+        <li>Copas: <span th:text="${copas.qntCartasFaltantes}"></span></li>
+        <li>Espadas: <span th:text="${espadas.qntCartasFaltantes}"></span></li>
+        <li>Ouros: <span th:text="${ouros.qntCartasFaltantes}"></span></li>
+        <li>Paus: <span th:text="${paus.qntCartasFaltantes}"></span></li>
+    </ul>
+
+    <a href="/"><button>Tentar novamente</button></a>
+</body>
+</html>
